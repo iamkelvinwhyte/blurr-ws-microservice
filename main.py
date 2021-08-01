@@ -2,6 +2,7 @@ import asyncio
 import websockets
 from PIL import Image, ImageFilter
 import cv2
+import numpy as np
 def blur (image_data):
     image = cv2.imread(image_data) # reads the image
     image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV) # convert to HSV
